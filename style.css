@@ -1,0 +1,23 @@
+@font-face {
+    font-family: CustomFont;
+    src: url('font/Monoton-Regular.ttf');
+}
+
+body {
+    font-family: CustomFont;
+    background-color: black;
+}
+
+p {
+    color: indigo;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#avatar {
+    display: block;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+}
