@@ -21,3 +21,13 @@ p {
     margin-right: auto;
     padding-top: 10%;
 }
+
+.badges {
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
