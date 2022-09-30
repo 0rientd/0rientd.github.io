@@ -43,6 +43,10 @@ p:hover {
     padding: 0.5%;
 }
 
+#codewars-badge {
+    padding-left: 42%;
+}
+
 @media screen and (max-width: 900px) {
     #avatar {
         display: block;
