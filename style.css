@@ -44,7 +44,9 @@ p:hover {
 }
 
 #codewars-badge {
-    padding-left: 42%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (max-width: 900px) {
