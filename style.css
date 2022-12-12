@@ -20,12 +20,9 @@ body {
 
 .card {
   display: flex;
-  /* height: 280px;
-  width: 200px; */
   background-color: #17141d;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
-/*   margin-left: -50px; */
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
@@ -107,6 +104,12 @@ a:link {
   text-decoration: none;
 }
 
+.insight-word {
+  margin: 0px;
+  display: inline;
+  color: rgb(183, 101, 252);
+}
+
 @media screen and (max-width: 1366px) {
   .container {
     position: absolute;
@@ -114,7 +117,7 @@ a:link {
     top: 13%;
     left: 30%;
     display: flex;
-    margin-left: 15%;
+    margin-left: 12%;
   }
 
   .avatar {
