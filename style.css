@@ -1,60 +1,165 @@
 @font-face {
-    font-family: CustomFont;
-    src: url('font/Monoton-Regular.ttf');
+  font-family: CustomFont;
+  /* src: url('font/Monoton-Regular.ttf'); */
+  src: url('font/RobotoMono-Bold.ttf');
 }
 
 body {
-    font-family: CustomFont;
-    background-color: black;
+  font-family: CustomFont;
+  background-color: black;
 }
 
-p {
-    background: linear-gradient(90deg, #ff4e4e, #018dff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    filter: grayscale(100%);
-    transition: filter 800ms;
-    text-align: center;
-    font-size: xx-large;
+.container {
+  position: absolute;
+  height: 75%;
+  top: 13%;
+  left: 30%;
+  display: flex;
+  margin-left: 10%;
 }
 
-p:hover {
-    filter: grayscale(0%);
+.card {
+  display: flex;
+  /* height: 280px;
+  width: 200px; */
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
 }
 
-#avatar {
-    display: block;
-    width: 15%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10%;
+.card:not(:first-child) {
+    margin-left: -50px;
 }
 
-.badges {
-    text-align: center;
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
 }
 
-.badge {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 3%;
-    padding: 0.5%;
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
 }
 
-#codewars-badge {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.avatar {
+  width: 600px;
+  display: flex;
 }
 
-@media screen and (max-width: 900px) {
-    #avatar {
-        display: block;
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 10%;
-    }
+#avatar-img {
+  display: flex;
+  width: 125px;
+  height: 125px;
+}
+
+.logo-name {
+  padding-top: 1%;
+  display: inline;
+  color: rgb(183, 101, 252);
+  font-size: 230%;
+}
+
+.information {
+  display: inline-block;
+  color: white;
+}
+
+section {
+  width: 70%;
+  margin-left: 3.5%;
+  margin-top: 10%;
+}
+
+.information-title {
+  font-size: 300%;
+  width: 80%;
+}
+
+.description {
+  font-size: 115%;
+  font: bold;
+  width: 80%;
+}
+
+button {
+  background-color: rgb(196, 125, 254);
+  border-radius: 5px;
+  padding: 2% 10%;
+  margin: 3%;
+}
+
+button:hover {
+  background-color: rgb(183, 101, 252);
+}
+
+a {
+  color: white;
+  font: bold;
+  font-size: 125%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1366px) {
+  .container {
+    position: absolute;
+    height: 75%;
+    top: 13%;
+    left: 30%;
+    display: flex;
+    margin-left: 15%;
+  }
+
+  .avatar {
+    width: 600px;
+    display: flex;
+  }
+
+  #avatar-img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-top: 3%;
+  }
+
+  .logo-name {
+    padding-top: 30px;
+    display: inline;
+    color: rgb(183, 101, 252);
+    font-size: 175%;
+  }
+
+  section {
+    width: 75%;
+    margin-top: 5%;
+  }
+
+  .information-title {
+    font-size: 200%;
+    width: 80%;
+  }
+  
+  .description {
+    font-size: 100%;
+    font: bold;
+    width: 80%;
+  }
+
+  button {
+    background-color: rgb(196, 125, 254);
+    border-radius: 5px;
+    padding: 2% 9%;
+    margin: 2%;
+  }
+
+  a {
+    font-size: 115%;
+  }
 }
