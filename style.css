@@ -77,8 +77,12 @@ section {
   width: 80%;
 }
 
+.description1 {
+  font-size: 150%;
+}
+
 .description {
-  font-size: 115%;
+  font-size: 150%;
   font: bold;
   width: 80%;
 }
@@ -88,6 +92,7 @@ button {
   border-radius: 5px;
   padding: 2% 10%;
   margin: 3%;
+  margin-left: 10%;
 }
 
 button:hover {
@@ -111,12 +116,16 @@ a:link {
 }
 
 #section1 {
-  width: 100%;
+  width: 85%;
 }
 
 #section2 {
   width: 100%;
   padding-top: 5%;
+}
+
+#default_section {
+  height: 100vh;
 }
 
 :root {
@@ -190,13 +199,17 @@ button:active > svg > path {
 }
 
 @media screen and (max-width: 1366px) {
+  .description1 {
+    font-size: 100%;
+  }
+
   .container {
     position: absolute;
     height: 75%;
     top: 13%;
     left: 30%;
     display: flex;
-    margin-left: 12%;
+    margin-left: 13%;
   }
 
   .avatar {
@@ -221,6 +234,75 @@ button:active > svg > path {
   section {
     width: 75%;
     margin-top: 5%;
+  }
+
+  #section1 {
+    width: 85%;
+  }
+
+  .information-title {
+    font-size: 200%;
+    width: 80%;
+  }
+  
+  .description {
+    font-size: 100%;
+    font: bold;
+    width: 80%;
+  }
+
+  button {
+    background-color: rgb(196, 125, 254);
+    border-radius: 5px;
+    padding: 2% 9%;
+    margin: 2%;
+  }
+
+  a {
+    font-size: 115%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .description1 {
+    font-size: 100%;
+  }
+
+  .container {
+    position: absolute;
+    height: 75%;
+    top: 13%;
+    left: 30%;
+    display: flex;
+    margin-left: 13%;
+  }
+
+  .avatar {
+    width: 600px;
+    display: flex;
+  }
+
+  #avatar-img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-top: 3%;
+  }
+
+  .logo-name {
+    padding-top: 30px;
+    display: inline;
+    color: rgb(183, 101, 252);
+    font-size: 175%;
+  }
+
+  section {
+    width: 75%;
+    margin-top: 5%;
+  }
+
+  #section1 {
+    width: 85%;
   }
 
   .information-title {
