@@ -1,168 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>0rientd.dev</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Simple line icons-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Header-->
-        <header class="masthead d-flex align-items-center">
-            <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1 wrapper">0rientd.dev</h1>
-                <h3 class="mb-max"><em class="text-white">Software Developer</em></h3>
-                <a class="btn btn-primary btn-xl" href="#about">Conheça mais o meu trabalho</a>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0rientd.dev</title>
+    <meta name="description" content="Serviços de desenvolvimento personalizado, bots de automação para Telegram e APIs customizadas para seu negócio.">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header id="header">
+        <div class="container navbar">
+            <a href="#" class="logo">0rientd.dev</a>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#benefits">Benefícios</a></li>
+                <li><a href="#contact" class="btn">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </header>
-        <!-- About-->
-        <section class="content-section bg-light" id="about">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Especializado em criar soluções digitais</h2>
-                        <p class="lead mb-5">
-                            Desenvolvo sites, sistemas e automações que ajudam sua empresa a crescer no mundo digital. Seja para divulgar promoções de jogos, criar um blog sobre games ou automatizar tarefas do seu negócio.<br/>Posso ajudar a transformar suas ideias em realidade!
-                        </p>
-                        <a class="btn btn-primary btn-xl" href="#services">Veja alguns exemplos</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Seus projetos com as melhores tecnlogias</h1>
+            <p>Especializado com as últimas versões do Ruby on Rails, conte comigo para desenvolver seus projetos!</p>
+            <div class="hero-btns">
+                <a href="#services" class="btn">Saiba mais</a>
+                <a href="#contact" class="btn btn-outline">Entre em contato</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Veja mais</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projetos</h2>
+                <p>Desenvolvimento desde o projeto até a entrega.</p>
+                <p></p>
+            </div>
+            <div class="services-container">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Nintendo Barato</h3>
+                    <p></p>
+                    <p>Promoções da eShop, PSN e XBox disponíveis em todos os seus serviços</p>
+                    <a href="#link-para-pagina-de-exemplo" class="btn">Veja aqui um exemplo</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3>Bots para Telegram</h3>
+                    <p>Utilize bots para permitir seus clientes pesquisarem promoções em tempo real</p>
+                    <p>Envie mensagens, responda pessoas e crie funções para que interajam com seus bots.</p>
+                    <a href="#contact" class="btn">Veja aqui um exemplo</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Desenvolvimento Personalizado</h3>
+                    <p>Tem uma idéia? Podemos criar ela!</p>
+                    <p>Podemos construir do zero um projeto e colocar sua idéia para acontecer já!</p>
+                    <a href="#contact" class="btn">Entrar em contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Vantagens Exclusivas</h2>
+                <p>Descubra por que empresas líderes escolhem nossas soluções para transformar digitalmente seus negócios e superar a concorrência.</p>
+            </div>
+            <div class="benefits-container">
+                <div class="benefits-img">
+                    <img src="images/apoio.png" alt="Tecnologia avançada">
+                </div>
+                <div class="benefits-content">
+                    <h3>Diferenciais que transformam resultados</h3>
+                    <div class="benefit-item" data-aos="fade-right">
+                        <div class="benefit-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>Tecnologia de Ponta</h4>
+                            <p>Utilizamos as mais recentes tecnologias e frameworks para garantir soluções modernas, escaláveis e à prova do futuro.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="benefit-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>Suporte Prioritário</h4>
+                            <p>Equipe dedicada de especialistas disponível 24/7 para resolver qualquer problema e garantir o funcionamento contínuo de suas soluções.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item" data-aos="fade-right" data-aos-delay="400">
+                        <div class="benefit-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>Personalização Total</h4>
+                            <p>Cada solução é meticulosamente desenvolvida para atender às necessidades específicas do seu negócio, garantindo máxima eficiência e ROI.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item" data-aos="fade-right" data-aos-delay="600">
+                        <div class="benefit-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>Entrega Acelerada</h4>
+                            <p>Nosso processo de desenvolvimento ágil reduz o tempo de lançamento em até 40%, permitindo que você capture oportunidades de mercado rapidamente.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Services-->
-        <section class="content-section bg-primary text-white text-center" id="services">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading">
-                    <h3 class="text-secondary mb-0">Algumas das mais variadas soluções</h3>
-                    <h2 class="mb-5">Veja alguns exemplos</h2>
-                </div>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-7 -5 38 38" stroke-width="0.75" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
-                            </svg>                              
-                        </span>
-                        <h4><strong>API para consulta de promoções de jogos da Nintendo/PSN/XBOX</strong></h4>
-                        <p class="text-faded mb-0">Você pode integrar as promoções em tempo real direto no seu site!</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-7 -5 38 38" stroke-width="0.75" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z" />
-                            </svg>                              
-                        </span>
-                        <h4><strong>Criação de sites e sistemas completo</strong></h4>
-                        <p class="text-faded mb-0">Podemos criar juntos um sistema para sua empresa ou até mesmo o site para sua marca!<br/>Veja um exemplo: <a href="https://promo.0rientd.dev.br" target="_blank">promo.0rientd.dev.br</a></p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-7 -5 38 38" stroke-width="0.75" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
-                            </svg>                              
-                        </span>
-                        <h4><strong>Bots customizáveis para o Telegram</strong></h4>
-                        <p class="text-faded mb-0">
-                            Automatize o envio de mensagens/perguntas, como o disponível em: <a href="https://t.me/OrientdPromoAPI_bot" target="_blank">https://t.me/OrientdPromoAPI_bot</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Callout-->
-        <section class="bg-light">
-            <div class="stuck-grid">
-                <div class="grid-item wrapper">Games</div>
-                <div class="grid-item wrapper">Playstation</div>
-                <div class="grid-item wrapper">PSN</div>
-                <div class="grid-item wrapper">Automações</div>
-                <div class="grid-item wrapper">Nintendo</div>
-                <div class="grid-item wrapper">Desenvolvimento</div>
-                <div class="grid-item wrapper">Telegram</div>
-                <div class="grid-item special"><b><p class="wrapper">Vamos inovar JUNTOS!</p></b></div>
-            </div>
-        </section>
-        <!-- Portfolio-->
-        <section class="content-section bg-light" id="portfolio">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">O que podemos fazer juntos?</h3>
-                    <h2 class="mb-5">Veja algumas idéias para você!</h2>
-                </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <iframe width="610" height="600" src="https://www.youtube.com/embed/BHxRJMj-h60?si=1uT3xq6s1_vp5R8Z&amp;start=594" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Footer / Contato -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">0rientd.dev</a>
+                    <p>Transformamos ideias em soluções tecnológicas inovadoras que impulsionam negócios no mundo digital. Estamos prontos para ser seu parceiro tecnológico e levar sua empresa ao próximo nível.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/" class="social-link" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/" class="social-link" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:contato@devsolutions.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
                         </a>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Bots para Telegram</div>
-                                    <p class="mb-0">Tenha um bot interativo que entregue as melhores promoções para seu público!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="Imagem do bot para Telegram buscando um jogo em tempo real" />
-                        </a>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#benefits">Benefícios</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Entre em Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>+55 (21) 99057-5136</p>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">API para integrações em sites e apps</div>
-                                    <p class="mb-0">Utilize nossa API para ter as últimas promoções em seu site ou app!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid-2" src="assets/img/portfolio-4.jpg" alt="Imagem da página de resposta do servidor de API" />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Construção de página de promoções</div>
-                                    <p class="mb-0">Um exemplo, foi uma página feita para ser integrada ao site do Nintendo Barato (Coelho no Japão)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid-2" src="assets/img/portfolio-3.jpg" alt="Imagem da página criada para o Nintendo Barato" />
-                        </a>
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>comercial@0rientd.dev.br</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Call to Action-->
-        <section class="content-section bg-primary text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2>Entre em contato comigo para saber mais!</h2>
-                <p class="mb-4">Através do e-mail, você pode entrar em contato comigo para realizar aquele projeto do seu site ou tirar alguma dúvida!</p>
-                <a class="btn btn-xl btn-light me-4" href="mailto:comercial@0rientd.dev.br">Mandar um e-mail</a>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container px-4 px-lg-5">
-                <h2>OUTROS LINKS ÚTEIS</h2>
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/carlos-0rientd-henrique-dev/" target="_blank"><i class="icon-social-linkedin"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="https://github.com/0rientd" target="_blank"><i class="icon-social-github"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
 </html>
