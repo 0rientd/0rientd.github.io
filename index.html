@@ -1,168 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>0rientd.dev</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Simple line icons-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Header-->
-        <header class="masthead d-flex align-items-center">
-            <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1 wrapper">0rientd.dev</h1>
-                <h3 class="mb-max"><em class="text-white">Software Developer</em></h3>
-                <a class="btn btn-primary btn-xl" href="#about">Conheça mais o meu trabalho</a>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0rientd.dev | Carlos Henrique</title>
+    <meta name="description" content="Desenvolvedor Full Stack especializado em Ruby on Rails. Criação de sistemas web, automações, bots para Telegram e soluções personalizadas.">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header id="header">
+        <div class="container navbar">
+            <a href="#" class="logo">0rientd.dev</a>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#skills">Tecnologias</a></li>
+                <li><a href="#contact" class="btn">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </header>
-        <!-- About-->
-        <section class="content-section bg-light" id="about">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Especializado em criar soluções digitais</h2>
-                        <p class="lead mb-5">
-                            Desenvolvo sites, sistemas e automações que ajudam sua empresa a crescer no mundo digital. Seja para divulgar promoções de jogos, criar um blog sobre games ou automatizar tarefas do seu negócio.<br/>Posso ajudar a transformar suas ideias em realidade!
-                        </p>
-                        <a class="btn btn-primary btn-xl" href="#services">Veja alguns exemplos</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Olá, me chamo Carlos Henrique</h1>
+            <p>Desenvolvedor Full Stack especializado em Ruby on Rails, transformando ideias em soluções digitais que fazem a diferença.</p>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn">Ver Projetos</a>
+                <a href="#contact" class="btn btn-outline">Fale Comigo</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Conheça meu trabalho</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre Mim</h2>
+                <p>Desenvolvedor apaixonado por criar soluções que impactam negócios</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sou desenvolvedor com experiência em criar sistemas web completos, desde a concepção até a entrega. Trabalho principalmente com <strong>Ruby on Rails</strong>, mas também tenho experiência com Node.js, TypeScript, Kotlin e Swift.</p>
+                    <p>Já desenvolvi projetos para diversos clientes, incluindo sistemas de e-commerce, plataformas de gerenciamento, bots de automação para Telegram e APIs customizadas. Minha abordagem é sempre focada em entregar soluções práticas e eficientes.</p>
+                    <p>Além do desenvolvimento profissional, contribuo com a comunidade criando projetos open source, incluindo homebrews para Nintendo 3DS.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">33+</span>
+                            <span class="stat-label">Repositórios</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Anos de Experiência</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Clientes Atendidos</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/0rientd" target="_blank" class="btn"><i class="fab fa-github"></i> Ver GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portfólio</h2>
+                <p>Conheça alguns dos projetos que desenvolvi para clientes e comunidade</p>
+            </div>
+            <div class="services-container">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <span class="project-tag">Cliente</span>
+                    <h3>Coelho no Japão</h3>
+                    <p>Fornecimento de promoções digitais via API para o portal Nintendo Barato</p>
+                    <a href="https://www.nintendobarato.com.br/eshop" target="_blank" class="btn btn-sm">Veja mais</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <span class="project-tag">Projeto Próprio</span>
+                    <h3>Promo 0rientd</h3>
+                    <p>Plataforma de promoções da eShop, PSN e Xbox que agrega ofertas de diversas lojas, com bots de notificação para Telegram, geração de imagens e mais.</p>
+                    <a href="https://promo.0rientd.dev" target="_blank" class="btn btn-sm">Visitar</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <span class="project-tag">Cliente</span>
+                    <h3>Lagoa Aventuras</h3>
+                    <p>Manutenção de infraestrutura, criação de páginas no WordPress e implantação de sistema Captive Portal</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <span class="project-tag">Cliente</span>
+                    <h3>Lu Cake Design</h3>
+                    <p>Sistema de gerenciamento de vendas e pedidos, dashboard de vendas, cadastro de clientes e geração de recibo de venda.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <span class="project-tag">Automação</span>
+                    <h3>Bots para Telegram</h3>
+                    <p>Desenvolvimento de bots personalizados para automação de atendimento, notificações e integração com sistemas externos.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <span class="project-tag">Open Source</span>
+                    <h3>Homebrews 3DS</h3>
+                    <p>Contribuições open source incluindo Gems para a comunidade Ruby, port do jogo 2048 e outras aplicações para Nintendo 3DS.</p>
+                    <a href="https://github.com/0rientd/2048-port-3ds" target="_blank" class="btn btn-sm">Ver 2048 no GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologias -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tecnologias</h2>
+                <p>Ferramentas e linguagens que utilizo para transformar ideias em realidade</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-gem"></i> Principal</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-gem"></i>
+                            <span>Ruby on Rails</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>C (3DS Dev)</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Services-->
-        <section class="content-section bg-primary text-white text-center" id="services">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading">
-                    <h3 class="text-secondary mb-0">Algumas das mais variadas soluções</h3>
-                    <h2 class="mb-5">Veja alguns exemplos</h2>
+        </div>
+    </section>
+
+    <!-- Como Trabalho -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Como Trabalho</h2>
+                <p>Minha abordagem para entregar projetos de qualidade</p>
+            </div>
+            <div class="benefits-container">
+                <div class="benefits-img">
+                    <img src="images/apoio.png" alt="Metodologia de trabalho">
                 </div>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-7 -5 38 38" stroke-width="0.75" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
-                            </svg>                              
-                        </span>
-                        <h4><strong>API para consulta de promoções de jogos da Nintendo/PSN/XBOX</strong></h4>
-                        <p class="text-faded mb-0">Você pode integrar as promoções em tempo real direto no seu site!</p>
+                <div class="benefits-content">
+                    <h3>Do conceito à entrega</h3>
+                    <div class="benefit-item" data-aos="fade-right">
+                        <div class="benefit-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>Comunicação Direta</h4>
+                            <p>Mantenho contato constante durante todo o projeto, garantindo que suas necessidades sejam atendidas em cada etapa.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-7 -5 38 38" stroke-width="0.75" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z" />
-                            </svg>                              
-                        </span>
-                        <h4><strong>Criação de sites e sistemas completo</strong></h4>
-                        <p class="text-faded mb-0">Podemos criar juntos um sistema para sua empresa ou até mesmo o site para sua marca!<br/>Veja um exemplo: <a href="https://promo.0rientd.dev.br" target="_blank">promo.0rientd.dev.br</a></p>
+                    <div class="benefit-item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="benefit-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>Desenvolvimento Ágil</h4>
+                            <p>Entregas incrementais que permitem validação constante e ajustes rápidos conforme o projeto evolui.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-7 -5 38 38" stroke-width="0.75" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
-                            </svg>                              
-                        </span>
-                        <h4><strong>Bots customizáveis para o Telegram</strong></h4>
-                        <p class="text-faded mb-0">
-                            Automatize o envio de mensagens/perguntas, como o disponível em: <a href="https://t.me/OrientdPromoAPI_bot" target="_blank">https://t.me/OrientdPromoAPI_bot</a>
-                        </p>
+                    <div class="benefit-item" data-aos="fade-right" data-aos-delay="400">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>Código de Qualidade</h4>
+                            <p>Sigo boas práticas de desenvolvimento, testes automatizados e documentação clara para garantir manutenibilidade.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item" data-aos="fade-right" data-aos-delay="600">
+                        <div class="benefit-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>Suporte Pós-Entrega</h4>
+                            <p>Ofereço suporte após a conclusão do projeto para garantir que tudo funcione perfeitamente.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Callout-->
-        <section class="bg-light">
-            <div class="stuck-grid">
-                <div class="grid-item wrapper">Games</div>
-                <div class="grid-item wrapper">Playstation</div>
-                <div class="grid-item wrapper">PSN</div>
-                <div class="grid-item wrapper">Automações</div>
-                <div class="grid-item wrapper">Nintendo</div>
-                <div class="grid-item wrapper">Desenvolvimento</div>
-                <div class="grid-item wrapper">Telegram</div>
-                <div class="grid-item special"><b><p class="wrapper">Vamos inovar JUNTOS!</p></b></div>
-            </div>
-        </section>
-        <!-- Portfolio-->
-        <section class="content-section bg-light" id="portfolio">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">O que podemos fazer juntos?</h3>
-                    <h2 class="mb-5">Veja algumas idéias para você!</h2>
-                </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <iframe width="610" height="600" src="https://www.youtube.com/embed/BHxRJMj-h60?si=1uT3xq6s1_vp5R8Z&amp;start=594" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Footer / Contato -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">0rientd.dev</a>
+                    <p>Desenvolvedor Full Stack apaixonado por criar soluções que fazem a diferença. Vamos transformar sua ideia em realidade?</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/carlosjunior-0rientd" class="social-link" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/0rientd" class="social-link" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:carlos.henrique@0rientd.dev.br" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
                         </a>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Bots para Telegram</div>
-                                    <p class="mb-0">Tenha um bot interativo que entregue as melhores promoções para seu público!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="Imagem do bot para Telegram buscando um jogo em tempo real" />
-                        </a>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#skills">Tecnologias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Entre em Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>+55 (21) 99057-5136</p>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">API para integrações em sites e apps</div>
-                                    <p class="mb-0">Utilize nossa API para ter as últimas promoções em seu site ou app!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid-2" src="assets/img/portfolio-4.jpg" alt="Imagem da página de resposta do servidor de API" />
-                        </a>
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>carlos.henrique@0rientd.dev.br</p>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Construção de página de promoções</div>
-                                    <p class="mb-0">Um exemplo, foi uma página feita para ser integrada ao site do Nintendo Barato (Coelho no Japão)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid-2" src="assets/img/portfolio-3.jpg" alt="Imagem da página criada para o Nintendo Barato" />
-                        </a>
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>Rio de Janeiro, Brasil</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Call to Action-->
-        <section class="content-section bg-primary text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2>Entre em contato comigo para saber mais!</h2>
-                <p class="mb-4">Através do e-mail, você pode entrar em contato comigo para realizar aquele projeto do seu site ou tirar alguma dúvida!</p>
-                <a class="btn btn-xl btn-light me-4" href="mailto:comercial@0rientd.dev.br">Mandar um e-mail</a>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container px-4 px-lg-5">
-                <h2>OUTROS LINKS ÚTEIS</h2>
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/carlos-0rientd-henrique-dev/" target="_blank"><i class="icon-social-linkedin"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="https://github.com/0rientd" target="_blank"><i class="icon-social-github"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
 </html>
