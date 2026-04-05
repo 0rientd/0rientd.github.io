@@ -15,11 +15,26 @@ function initNavigation() {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     const navLinksItems = document.querySelectorAll('.nav-links a');
+    
+    // Create overlay element
+    const overlay = document.createElement('div');
+    overlay.classList.add('nav-overlay');
+    document.body.appendChild(overlay);
 
     // Toggle mobile menu
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
         hamburger.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    });
+
+    // Close mobile menu when clicking on overlay
+    overlay.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
     });
 
     // Close mobile menu when clicking on a link
@@ -27,6 +42,8 @@ function initNavigation() {
         item.addEventListener('click', () => {
             navLinks.classList.remove('active');
             hamburger.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
         });
     });
 
