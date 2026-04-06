@@ -18,7 +18,81 @@
   --box-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.2);
   --border-radius: 8px;
   --section-padding: 80px 0;
+  
+  /* Background colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  
+  /* Card and component backgrounds */
+  --card-bg: #ffffff;
+  --header-bg-scrolled: #f8f9fa;
+  --nav-mobile-bg: #f8f9fa;
+  --footer-bg: #1d1d1d;
 }
+
+/* ===== DARK MODE ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #5b7aff;
+    --secondary-color: #7c9cff;
+    --accent-color: #5ed4ff;
+    --dark-color: #f8f9fa;
+    --light-color: #1a1d29;
+    --text-color: #e4e6eb;
+    --text-light: #e4e6eb;
+    --gray-light: #2a2f3d;
+    --gray: #9ca3af;
+    --intersection-animation-loop: #c4a3e0;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    --box-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.5);
+    
+    /* Background colors */
+    --bg-primary: #1a1d29;
+    --bg-secondary: #252938;
+    --bg-tertiary: #2a2f3d;
+    
+    /* Card and component backgrounds */
+    --card-bg: #252938;
+    --header-bg-scrolled: #1a1d29;
+    --nav-mobile-bg: #1a1d29;
+    --footer-bg: #141620;
+  }
+  
+  /* Adjust images brightness in dark mode */
+  img:not(.logo) {
+    opacity: 0.9;
+  }
+  
+  /* Better overlay in dark mode */
+  .nav-overlay.active {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Better border colors in dark mode */
+  .skill-category h3 {
+    border-bottom-color: var(--bg-tertiary);
+  }
+  
+  /* Adjust scrollbar for dark mode */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--gray);
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+  }
+}
+
 ::-webkit-color-swatch-wrapper {
   padding: 0;
 }
@@ -40,7 +114,7 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   overflow-x: hidden;
-  background-color: var(--light-color);
+  background-color: var(--bg-primary);
 }
 
 a {
@@ -156,7 +230,7 @@ header {
 }
 
 header.scrolled {
-  background-color: var(--light-color);
+  background-color: var(--header-bg-scrolled);
   box-shadow: var(--box-shadow);
   padding: 15px 0;
 }
@@ -370,7 +444,7 @@ header.scrolled .hamburger span {
 
 /* ===== SERVICES SECTION ===== */
 .services {
-  background-color: var(--light-color);
+  background-color: var(--bg-primary);
 }
 
 .services-container {
@@ -380,7 +454,7 @@ header.scrolled .hamburger span {
 }
 
 .service-card {
-  background-color: white;
+  background-color: var(--card-bg);
   border-radius: var(--border-radius);
   padding: 40px 30px;
   text-align: center;
@@ -425,7 +499,7 @@ header.scrolled .hamburger span {
 
 /* ===== BENEFITS SECTION ===== */
 .benefits {
-  background-color: var(--gray-light);
+  background-color: var(--bg-secondary);
 }
 
 .benefits-container {
@@ -500,7 +574,7 @@ header.scrolled .hamburger span {
 
 /* ===== FOOTER ===== */
 footer {
-  background-color: var(--dark-color);
+  background-color: var(--footer-bg);
   color: var(--text-light);
   padding: 70px 0 20px;
 }
@@ -638,7 +712,7 @@ footer {
 
 /* ===== ABOUT SECTION ===== */
 .about {
-  background-color: var(--light-color);
+  background-color: var(--bg-secondary);
 }
 
 .about-content {
@@ -695,7 +769,7 @@ footer {
 
 /* ===== SKILLS SECTION ===== */
 .skills {
-  background-color: var(--gray-light);
+  background-color: var(--bg-secondary);
 }
 
 .skills-container {
@@ -705,7 +779,7 @@ footer {
 }
 
 .skill-category {
-  background-color: white;
+  background-color: var(--card-bg);
   border-radius: var(--border-radius);
   padding: 30px;
   box-shadow: var(--box-shadow);
@@ -739,7 +813,7 @@ footer {
 .skill-item {
   display: flex;
   align-items: center;
-  background-color: var(--gray-light);
+  background-color: var(--bg-tertiary);
   padding: 10px 16px;
   border-radius: 25px;
   font-size: 0.9rem;
@@ -749,7 +823,7 @@ footer {
 
 .skill-item:hover {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--text-light);
 }
 
 .skill-item i {
@@ -818,7 +892,7 @@ footer {
     right: -100%;
     width: 70%;
     height: 100vh;
-    background-color: var(--light-color);
+    background-color: var(--nav-mobile-bg);
     flex-direction: column;
     align-items: flex-start;
     padding: 100px 30px 30px;
