@@ -9,6 +9,90 @@ function docReady(fn) {
     }
 }
 
+// ===== INFINITE PIXEL GALAXY BACKGROUND =====
+function initGalaxyBackground() {
+    const canvas = document.getElementById('galaxy');
+    const ctx = canvas.getContext('2d');
+    
+    // Set canvas size to full screen
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    
+    window.addEventListener('resize', resizeCanvas);
+
+    // --- CONFIGURATION ---
+    const layers = 5; // More layers for depth
+    const starsPerLayer = 100; 
+    const speedFactors = [0.0002, 0.0004, 0.00045, 0.0005, 0.00055]; // Parallax speeds
+    
+    // The requested Color Palette
+    const colors = ['#9b59b6', '#2980b9', '#ff7eb3', '#e67e22', '#2ecc71'];
+
+    // Generate stars with pixel art style and assigned colors
+    const stars = [];
+    
+    for (let layer = 0; layer < layers; layer++) {
+        for (let i = 0; i < starsPerLayer; i++) {
+            stars.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                layer: layer,
+                size: 2 + Math.random() * 3, // Random pixel size for variety
+                speedX: (Math.random() - 0.5) * 0.1, // Constant drift speed
+                speedY: (Math.random() - 0.5) * 0.1,
+                color: colors[Math.floor(Math.random() * colors.length)] // Random palette color
+            });
+        }
+    }
+
+    // Mouse movement variables for parallax effect
+    let lastMouseX = canvas.width / 2;
+    let lastMouseY = canvas.height / 2;
+    
+    function draw() {
+        // Clear canvas with a slight fade effect to create trails (optional, currently using clearRect)
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (let star of stars) {
+            // 1. Constant Infinite Drift (Background movement)
+            star.x += star.speedX;
+            star.y += star.speedY;
+
+            // Wrap around screen edges to make it truly infinite
+            if (star.x < 0) star.x = canvas.width;
+            if (star.x > canvas.width) star.x = 0;
+            if (star.y < 0) star.y = canvas.height;
+            if (star.y > canvas.height) star.y = 0;
+
+            // 2. Parallax Effect based on Mouse Position
+            const dx = lastMouseX - canvas.width / 2;
+            const dy = lastMouseY - canvas.height / 2;
+            
+            // Move stars opposite to mouse direction, speed depends on layer depth
+            star.x -= (dx * speedFactors[star.layer]); 
+            star.y -= (dy * speedFactors[star.layer]);
+
+            // Draw the pixel
+            ctx.fillStyle = star.color;
+            ctx.fillRect(star.x, star.y, star.size, star.size);
+        }
+
+        requestAnimationFrame(draw);
+    }
+
+    // Handle mouse movement for parallax
+    document.addEventListener('mousemove', (e) => {
+        lastMouseX = e.clientX;
+        lastMouseY = e.clientY;
+    });
+
+    // Start the infinite animation
+    draw();
+}
+
 // ===== NAVIGATION MENU =====
 function initNavigation() {
     const header = document.getElementById('header');
@@ -224,6 +308,9 @@ function initParallaxEffect() {
 
 // ===== INITIALIZE ALL =====
 docReady(() => {
+    // Initialize galaxy background first
+    initGalaxyBackground();
+    
     // Initialize all components
     initNavigation();
     initScrollAnimations();
