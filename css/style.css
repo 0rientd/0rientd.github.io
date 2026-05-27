@@ -150,7 +150,7 @@ img {
 .btn-outline {
   background-color: transparent;
   border: 2px solid #9b59b6;
-  color: #9b59b6;
+  color: var(--text-light);
   box-shadow: 0 0 10px rgba(155, 89, 182, 0.2);
 }
 
@@ -175,7 +175,7 @@ img {
 }
 
 .section-title h2::after {
-  background: linear-gradient(to right, #9b59b6 10%, #ff7eb3 50%, #2980b9 100%);
+  background: linear-gradient(to right, var(--secondary-color) 10%, var(--intersection-animation-loop) 50%, var(--secondary-color) 100%);
   background-size: 200% auto;
   animation: textclip 3.5s linear infinite;
   content: '';
@@ -235,7 +235,7 @@ header.scrolled {
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 700;
-  background: linear-gradient(to right, #9b59b6 10%, #ff7eb3 50%, #2980b9 100%);
+  background: linear-gradient(to right, var(--secondary-color) 10%, var(--intersection-animation-loop) 50%, var(--secondary-color) 100%);
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
@@ -519,19 +519,20 @@ header.scrolled .hamburger span {
 }
 
 .benefits-img {
+  width: 100%;
+  height: auto;
   position: relative;
   overflow: hidden;
   border-radius: var(--border-radius);
   box-shadow: 0 10px 30px rgba(155, 89, 182, 0.3);
-  border: 1px solid rgba(155, 89, 182, 0.2);
-}
-
-.benefits-img img {
+  border: 2px solid rgba(155, 89, 182, 0.2);
+  background-color: var(--card-bg);
+  backdrop-filter: blur(10px);
   transition: var(--transition);
 }
 
-.benefits-img:hover img {
-  transform: scale(1.05);
+.benefits-img:hover {
+  transform: scale(1.03);
 }
 
 .benefits-content h3 {
@@ -609,7 +610,7 @@ footer {
 
 .footer-about p {
   margin-bottom: 25px;
-  color: var(--gray-light);
+  color: var(--text-light);
 }
 
 .social-links {
@@ -630,6 +631,7 @@ footer {
 }
 
 .social-link:hover {
+  color: var(--text-light);
   background: linear-gradient(135deg, #9b59b6, #2980b9);
   transform: translateY(-5px);;
   box-shadow: 0 5px 15px rgba(155, 89, 182, 0.4);
@@ -660,7 +662,7 @@ footer {
 }
 
 .footer-links ul li a {
-  color: var(--gray-light);
+  color: var(--text-light);
   transition: var(--transition);
 }
 
@@ -683,7 +685,7 @@ footer {
 }
 
 .contact-text {
-  color: var(--gray-light);
+  color: var(--text-light);
 }
 
 .copyright {
