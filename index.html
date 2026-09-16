@@ -1,60 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0rientd.dev | Carlos Henrique</title>
-    <meta name="description" content="Desenvolvedor Full Stack especializado em Ruby on Rails. Criação de sistemas web, automações, bots para Telegram e soluções personalizadas.">
-    
+    <meta name="description" content="Full Stack Developer specialized in Ruby on Rails. Web systems, automations, Telegram bots and custom solutions.">
+
     <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://0rientd.github.io/">
-    <meta property="og:title" content="0rientd.dev | Carlos Henrique - Desenvolvedor Full Stack">
-    <meta property="og:description" content="Desenvolvedor Full Stack especializado em Ruby on Rails. Criação de sistemas web, automações, bots para Telegram e soluções personalizadas. Transformando ideias em soluções digitais! 🚀">
+    <meta property="og:title" content="0rientd.dev | Carlos Henrique - Full Stack Developer">
+    <meta property="og:description" content="Full Stack Developer specialized in Ruby on Rails. Web systems, automations, Telegram bots and custom solutions. Turning ideas into digital solutions! 🚀">
     <meta property="og:image" content="https://0rientd.github.io/assets/img/avatar.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="pt_BR">
     <meta property="og:site_name" content="0rientd.dev">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://0rientd.github.io/">
-    <meta name="twitter:title" content="0rientd.dev | Carlos Henrique - Desenvolvedor Full Stack">
-    <meta name="twitter:description" content="Desenvolvedor Full Stack especializado em Ruby on Rails. Criação de sistemas web, automações, bots para Telegram e soluções personalizadas. 🚀">
+    <meta name="twitter:title" content="0rientd.dev | Carlos Henrique - Full Stack Developer">
+    <meta name="twitter:description" content="Full Stack Developer specialized in Ruby on Rails. Web systems, automations, Telegram bots and custom solutions. 🚀">
     <meta name="twitter:image" content="https://0rientd.github.io/assets/img/avatar.png">
-    
-    <!-- Meta tags adicionais -->
+
+    <!-- Additional meta tags -->
     <meta name="author" content="Carlos Henrique">
-    <meta name="keywords" content="desenvolvedor full stack, ruby on rails, desenvolvimento web, automações, bots telegram, sistemas web, programador">
+    <meta name="keywords" content="full stack developer, ruby on rails, web development, automation, telegram bots, web systems, programmer">
     <meta name="theme-color" content="#6C5CE7">
-    
-    <!-- Fontes -->
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- CSS Personalizado -->
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Canvas de Galáxia (fundo) -->
+    <!-- Galaxy Canvas (background) -->
     <canvas id="galaxy"></canvas>
-    
-    <!-- Header / Navegação -->
+
+    <!-- Header / Navigation -->
     <header id="header">
         <div class="container navbar">
             <a href="#" class="logo">0rientd.dev</a>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#skills">Tecnologias</a></li>
-                <li><a href="#contact" class="btn">Contato</a></li>
+                <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Tech Stack</a></li>
+                <li><a href="#contact" class="btn" data-i18n="nav.contact">Contact</a></li>
             </ul>
+            <button type="button" class="lang-switch" id="langSwitch" data-i18n-aria-label="lang.ariaLabel" aria-label="Switch language to Portuguese">
+                <i class="fas fa-globe"></i>
+                <span class="lang-switch-text" data-i18n="lang.label">PT</span>
+            </button>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -66,125 +71,124 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container hero-content">
-            <h1>Olá, me chamo Carlos Henrique</h1>
-            <p>Desenvolvedor Full Stack especializado em Ruby on Rails, transformando ideias em soluções digitais!</p>
+            <h1 data-i18n="hero.title">Hi, my name is Carlos Henrique</h1>
+            <p data-i18n="hero.subtitle">Full Stack Developer specialized in Ruby on Rails, turning ideas into digital solutions!</p>
             <div class="hero-btns">
-                <a href="#portfolio" class="btn">Ver Projetos</a>
-                <a href="#contact" class="btn">Fale Comigo</a>
+                <a href="#portfolio" class="btn" data-i18n="hero.btnProjects">View Projects</a>
+                <a href="#contact" class="btn" data-i18n="hero.btnContact">Get in Touch</a>
             </div>
         </div>
         <div class="scroll-down">
-            <span>Conheça meu trabalho</span>
+            <span data-i18n="hero.scroll">Check out my work</span>
             <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <!-- Sobre Mim -->
+    <!-- About -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-title">
-                <h2>Sobre Mim</h2>
-                <p>Desenvolvedor apaixonado por transformar ideias em realidade</p>
+                <h2 data-i18n="about.title">About Me</h2>
+                <p data-i18n="about.subtitle">A developer passionate about turning ideas into reality</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-            <p>Sou desenvolvedor com experiência em criar sistemas web completos, desde a concepção até a entrega. Trabalho principalmente com <strong>Ruby on Rails</strong>, mas também tenho experiência com <strong>Node.js<strong>, <strong>C++<strong>, <strong>Python<strong>, <strong>Perl<strong> e <strong>Swift<strong>.</p>
-            
-                    <p>Já desenvolvi projetos para diversos clientes, incluindo plataformas de gerenciamento de estoque e vendas, bots de automação para Telegram e APIs customizadas. Minha abordagem é sempre focada em entregar soluções práticas e eficientes.</p>
-                    <p>Além do desenvolvimento profissional, contribuo com a comunidade criando projetos open source.</p>
+                    <p data-i18n-html="about.p1">I'm a developer experienced in building complete web systems, from concept to delivery. I work mainly with <strong>Ruby on Rails</strong>, but I also have experience with <strong>Node.js</strong>, <strong>C++</strong>, <strong>Python</strong>, <strong>Perl</strong> and <strong>Swift</strong>.</p>
+                    <p data-i18n="about.p2">I've delivered projects for many clients, including inventory and sales management platforms, Telegram automation bots and custom APIs. My approach is always focused on shipping practical and efficient solutions.</p>
+                    <p data-i18n="about.p3">Beyond professional work, I give back to the community by building open source projects.</p>
                     <div class="about-stats">
                         <div class="stat-item">
                             <span class="stat-number">33+</span>
-                            <span class="stat-label">Repositórios</span>
+                            <span class="stat-label" data-i18n="about.stat1">Repositories</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">5+</span>
-                            <span class="stat-label">Anos de Experiência</span>
+                            <span class="stat-label" data-i18n="about.stat2">Years of Experience</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">10+</span>
-                            <span class="stat-label">Clientes Atendidos</span>
+                            <span class="stat-label" data-i18n="about.stat3">Clients Served</span>
                         </div>
                     </div>
-                    <a href="https://github.com/0rientd" target="_blank" class="btn"><i class="fab fa-github"></i> Ver GitHub</a>
+                    <a href="https://github.com/0rientd" target="_blank" class="btn"><i class="fab fa-github"></i> <span data-i18n="about.github">View GitHub</span></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfólio -->
+    <!-- Portfolio -->
     <section id="portfolio" class="services">
         <div class="container">
             <div class="section-title">
-                <h2>Portfólio</h2>
-                <p>Conheça alguns dos projetos que desenvolvi para clientes e comunidade</p>
+                <h2 data-i18n="portfolio.title">Portfolio</h2>
+                <p data-i18n="portfolio.subtitle">Take a look at some of the projects I built for clients and the community</p>
             </div>
             <div class="services-container">
                 <div class="service-card" data-aos="fade-up">
                     <div class="service-icon">
                         <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <span class="project-tag">Cliente</span>
+                    <span class="project-tag" data-i18n="tag.client">Client</span>
                     <h3>Coelho no Japão</h3>
-                    <p>Fornecimento de promoções digitais via API para o portal Nintendo Barato</p>
-                    <a href="https://www.nintendobarato.com.br/eshop" target="_blank" class="btn btn-sm">Veja mais</a>
+                    <p data-i18n="portfolio.card1.desc">Digital deals supplied through an API to the Nintendo Barato portal</p>
+                    <a href="https://www.nintendobarato.com.br/eshop" target="_blank" class="btn btn-sm" data-i18n="portfolio.card1.btn">See more</a>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-icon">
                         <i class="fas fa-tags"></i>
                     </div>
-                    <span class="project-tag">Projeto Próprio</span>
+                    <span class="project-tag" data-i18n="tag.own">Personal Project</span>
                     <h3>Promo 0rientd</h3>
-                    <p>Plataforma de promoções da eShop, PSN e Xbox que agrega ofertas de diversas lojas, com bots de notificação para Telegram, geração de imagens e mais.</p>
-                    <a href="https://promo.0rientd.dev.br" target="_blank" class="btn btn-sm">Visitar</a>
+                    <p data-i18n="portfolio.card2.desc">A deals platform for eShop, PSN and Xbox that aggregates offers from several stores, with Telegram notification bots, image generation and more.</p>
+                    <a href="https://promo.0rientd.dev.br" target="_blank" class="btn btn-sm" data-i18n="portfolio.card2.btn">Visit</a>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-icon">
                         <i class="fas fa-tree"></i>
                     </div>
-                    <span class="project-tag">Cliente</span>
+                    <span class="project-tag" data-i18n="tag.client">Client</span>
                     <h3>Lagoa Aventuras</h3>
-                    <p>Manutenção de infraestrutura, criação de páginas no WordPress e implantação de sistema Captive Portal</p>
+                    <p data-i18n="portfolio.card3.desc">Infrastructure maintenance, WordPress page building and Captive Portal deployment</p>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-icon">
                         <i class="fas fa-birthday-cake"></i>
                     </div>
-                    <span class="project-tag">Cliente</span>
+                    <span class="project-tag" data-i18n="tag.client">Client</span>
                     <h3>Lu Cake Design</h3>
-                    <p>Sistema de gerenciamento de vendas e pedidos, dashboard de vendas, cadastro de clientes e geração de recibo de venda.</p>
+                    <p data-i18n="portfolio.card4.desc">Sales and order management system, sales dashboard, customer registry and sales receipt generation.</p>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-icon">
                         <i class="fab fa-telegram"></i>
                     </div>
-                    <span class="project-tag">Automação</span>
-                    <h3>Bots para Telegram</h3>
-                    <p>Desenvolvimento de bots personalizados para automação de atendimento, notificações e integração com sistemas externos.</p>
+                    <span class="project-tag" data-i18n="tag.automation">Automation</span>
+                    <h3 data-i18n="portfolio.card5.title">Telegram Bots</h3>
+                    <p data-i18n="portfolio.card5.desc">Custom bots built for support automation, notifications and integration with external systems.</p>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="service-icon">
                         <i class="fas fa-gamepad"></i>
                     </div>
-                    <span class="project-tag">Open Source</span>
+                    <span class="project-tag" data-i18n="tag.openSource">Open Source</span>
                     <h3>Homebrews 3DS</h3>
-                    <p>Contribuições open source incluindo Gems para a comunidade Ruby, port do jogo 2048 e outras aplicações para Nintendo 3DS.</p>
-                    <a href="https://github.com/0rientd/2048-port-3ds" target="_blank" class="btn btn-sm">Ver 2048 no GitHub</a>
+                    <p data-i18n="portfolio.card6.desc">Open source contributions including Gems for the Ruby community, a port of the game 2048 and other Nintendo 3DS applications.</p>
+                    <a href="https://github.com/0rientd/2048-port-3ds" target="_blank" class="btn btn-sm" data-i18n="portfolio.card6.btn">See 2048 on GitHub</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tecnologias -->
+    <!-- Tech Stack -->
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-title">
-                <h2>Tecnologias</h2>
-                <p>Ferramentas e linguagens que utilizo para transformar ideias em realidade</p>
+                <h2 data-i18n="skills.title">Tech Stack</h2>
+                <p data-i18n="skills.subtitle">Tools and languages I use to turn ideas into reality</p>
             </div>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3><i class="fas fa-gem"></i> Principal</h3>
+                    <h3><i class="fas fa-gem"></i> <span data-i18n="skills.main">Main</span></h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <i class="fas fa-gem"></i>
@@ -200,7 +204,7 @@
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-terminal"></i>
-                            <span>C (3DS Dev)</span>
+                            <span data-i18n="skills.c">C (3DS Dev)</span>
                         </div>
                     </div>
                 </div>
@@ -208,26 +212,26 @@
         </div>
     </section>
 
-    <!-- Como Trabalho -->
+    <!-- How I Work -->
     <section id="benefits" class="benefits">
         <div class="container">
             <div class="section-title">
-                <h2>Como Trabalho</h2>
-                <p>Minha abordagem para entregar projetos de qualidade</p>
+                <h2 data-i18n="benefits.title">How I Work</h2>
+                <p data-i18n="benefits.subtitle">My approach to delivering quality projects</p>
             </div>
             <div class="benefits-container">
                 <a href="https://promo.0rientd.dev.br" target="_blank">
-                  <img class="benefits-img" src="images/apoio.png" alt="Metodologia de trabalho">
+                  <img class="benefits-img" src="images/apoio.png" data-i18n-alt="benefits.imgAlt" alt="Work methodology">
                 </a>
                 <div class="benefits-content">
-                    <h3>Do conceito à entrega</h3>
+                    <h3 data-i18n="benefits.heading">From concept to delivery</h3>
                     <div class="benefit-item" data-aos="fade-right">
                         <div class="benefit-icon">
                             <i class="fas fa-comments"></i>
                         </div>
                         <div class="benefit-text">
-                            <h4>Comunicação Direta</h4>
-                            <p>Mantenho contato constante durante todo o projeto, garantindo que suas necessidades sejam atendidas em cada etapa.</p>
+                            <h4 data-i18n="benefits.item1.title">Direct Communication</h4>
+                            <p data-i18n="benefits.item1.desc">I stay in touch throughout the whole project, making sure your needs are met at every step.</p>
                         </div>
                     </div>
                     <div class="benefit-item" data-aos="fade-right" data-aos-delay="200">
@@ -235,8 +239,8 @@
                             <i class="fas fa-code-branch"></i>
                         </div>
                         <div class="benefit-text">
-                            <h4>Desenvolvimento Ágil</h4>
-                            <p>Entregas incrementais que permitem validação constante e ajustes rápidos conforme o projeto evolui.</p>
+                            <h4 data-i18n="benefits.item2.title">Agile Development</h4>
+                            <p data-i18n="benefits.item2.desc">Incremental deliveries that allow constant validation and quick adjustments as the project evolves.</p>
                         </div>
                     </div>
                     <div class="benefit-item" data-aos="fade-right" data-aos-delay="400">
@@ -244,8 +248,8 @@
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <div class="benefit-text">
-                            <h4>Código de Qualidade</h4>
-                            <p>Sigo boas práticas de desenvolvimento, testes automatizados e documentação clara para garantir manutenibilidade.</p>
+                            <h4 data-i18n="benefits.item3.title">Quality Code</h4>
+                            <p data-i18n="benefits.item3.desc">I follow development best practices, automated testing and clear documentation to ensure maintainability.</p>
                         </div>
                     </div>
                     <div class="benefit-item" data-aos="fade-right" data-aos-delay="600">
@@ -253,8 +257,8 @@
                             <i class="fas fa-headset"></i>
                         </div>
                         <div class="benefit-text">
-                            <h4>Suporte Pós-Entrega</h4>
-                            <p>Ofereço suporte após a conclusão do projeto para garantir que tudo funcione perfeitamente.</p>
+                            <h4 data-i18n="benefits.item4.title">Post-Delivery Support</h4>
+                            <p data-i18n="benefits.item4.desc">I offer support after the project is finished to make sure everything runs perfectly.</p>
                         </div>
                     </div>
                 </div>
@@ -262,13 +266,13 @@
         </div>
     </section>
 
-    <!-- Footer / Contato -->
+    <!-- Footer / Contact -->
     <footer id="contact">
         <div class="container">
             <div class="footer-container">
                 <div class="footer-about">
                     <a href="#" class="footer-logo">0rientd.dev</a>
-                    <p>Desenvolvedor Full Stack apaixonado por criar soluções que fazem a diferença. Vamos transformar sua ideia em realidade?</p>
+                    <p data-i18n="footer.about">Full Stack Developer passionate about building solutions that make a difference. Shall we turn your idea into reality?</p>
                     <div class="social-links">
                         <a href="https://linkedin.com/in/carlosjunior-0rientd" class="social-link" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
@@ -276,22 +280,22 @@
                         <a href="https://github.com/0rientd" class="social-link" target="_blank" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="mailto:carlos.henrique@0rientd.dev.br" class="social-link" aria-label="Email">
+                        <a href="mailto:carlos.henrique@0rientd.dev.br" class="social-link" data-i18n-aria-label="footer.emailAria" aria-label="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
                 <div class="footer-links">
-                    <h4>Links Rápidos</h4>
+                    <h4 data-i18n="footer.linksTitle">Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#about">Sobre</a></li>
-                        <li><a href="#portfolio">Portfólio</a></li>
-                        <li><a href="#skills">Tecnologias</a></li>
+                        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                        <li><a href="#about" data-i18n="nav.about">About</a></li>
+                        <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+                        <li><a href="#skills" data-i18n="nav.skills">Tech Stack</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Entre em Contato</h4>
+                    <h4 data-i18n="footer.contactTitle">Get in Touch</h4>
                     <div class="contact-info">
                         <div class="contact-icon">
                             <i class="fas fa-phone-alt"></i>
@@ -313,7 +317,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-text">
-                            <p>Rio de Janeiro, Brasil</p>
+                            <p data-i18n="footer.location">Rio de Janeiro, Brazil</p>
                         </div>
                     </div>
                 </div>
@@ -321,12 +325,13 @@
         </div>
     </footer>
 
-    <!-- Botão Voltar ao Topo -->
-    <div class="back-to-top">
+    <!-- Back to Top Button -->
+    <div class="back-to-top" data-i18n-aria-label="backToTop" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </div>
 
     <!-- JavaScript -->
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -211,89 +211,6 @@ function initScrollAnimations() {
     });
 }
 
-// ===== TESTIMONIALS SLIDER =====
-function initTestimonialsSlider() {
-    const track = document.querySelector('.testimonials-track');
-    const slides = document.querySelectorAll('.testimonial-slide');
-    const dots = document.querySelectorAll('.slider-dot');
-    const prevBtn = document.querySelector('.slider-arrow.prev');
-    const nextBtn = document.querySelector('.slider-arrow.next');
-    
-    let currentIndex = 0;
-    const slideWidth = 100; // 100%
-
-    // Set initial position
-    updateSlider();
-
-    // Update slider position and active dot
-    function updateSlider() {
-        track.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
-        
-        // Update active dot
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === currentIndex);
-        });
-    }
-
-    // Next slide
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        updateSlider();
-    }
-
-    // Previous slide
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        updateSlider();
-    }
-
-    // Event listeners
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
-    
-    // Dot navigation
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            currentIndex = index;
-            updateSlider();
-        });
-    });
-
-    // Auto slide (optional)
-    let slideInterval = setInterval(nextSlide, 5000);
-    
-    // Pause auto slide on hover
-    track.addEventListener('mouseenter', () => {
-        clearInterval(slideInterval);
-    });
-    
-    track.addEventListener('mouseleave', () => {
-        slideInterval = setInterval(nextSlide, 5000);
-    });
-
-    // Touch events for mobile
-    let touchStartX = 0;
-    let touchEndX = 0;
-    
-    track.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-    });
-    
-    track.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    });
-    
-    function handleSwipe() {
-        const swipeThreshold = 50;
-        if (touchEndX < touchStartX - swipeThreshold) {
-            nextSlide(); // Swipe left
-        } else if (touchEndX > touchStartX + swipeThreshold) {
-            prevSlide(); // Swipe right
-        }
-    }
-}
-
 // ===== PARALLAX EFFECT =====
 function initParallaxEffect() {
     const hero = document.querySelector('.hero');
@@ -308,13 +225,15 @@ function initParallaxEffect() {
 
 // ===== INITIALIZE ALL =====
 docReady(() => {
+    // Apply the saved/default language before anything else renders
+    if (window.i18n) window.i18n.init();
+
     // Initialize galaxy background first
     initGalaxyBackground();
     
     // Initialize all components
     initNavigation();
     initScrollAnimations();
-    initTestimonialsSlider();
     initParallaxEffect();
     
     // Add loading animation class to body
